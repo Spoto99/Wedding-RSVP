@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding RSVP</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: black;
+      color: gold;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fdfdfd;
+      border: 2px solid gold;
+      border-radius: 8px;
+      padding: 2rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: gold;
+      color: black;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      margin-top: 1.5rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>You’re Invited to Our Wedding</h1>
+    <p>Please RSVP below</p>
+  </header>
+
+  <section>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="attending">Will you be attending?</label>
+      <select id="attending" name="attending" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="guests">Number of Guests (including you):</label>
+      <input type="number" id="guests" name="guests" min="1" max="10">
+
+      <label for="diet">Dietary Requirements:</label>
+      <textarea id="diet" name="diet" rows="3"></textarea>
+
+      <button type="submit">Submit RSVP</button>
+    </form>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; color:gold;">How to Get There</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098043!2d144.9537353153183!3d-37.81627927975147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f0d9ff%3A0x506f49a909540!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1614131010654!5m2!1sen!2sau"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+</body>
+</html>
